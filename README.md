@@ -140,8 +140,8 @@ What Inktion does and doesn't do:
 Each release includes a `SHA256SUMS.txt` file. If the fingerprint of your download matches the
 one listed there, you have the exact file that was published:
 
-- **macOS** (Terminal): `shasum -a 256 ~/Downloads/Inktion-*-macos-arm64.zip`
-- **Windows** (PowerShell): `Get-FileHash $HOME\Downloads\Inktion-*-windows-x64.zip`
+- **macOS** (Terminal): `shasum -a 256 ~/Downloads/Inktion-*-macos-arm64.dmg`
+- **Windows** (PowerShell): `Get-FileHash $HOME\Downloads\Inktion-*-windows-x64-setup.exe`
 
 You can also upload the zip to [VirusTotal](https://www.virustotal.com) to have it scanned
 by dozens of antivirus engines at once.
@@ -150,9 +150,10 @@ by dozens of antivirus engines at once.
 
 ## Installing on macOS (Apple silicon)
 
-1. Download `Inktion-…-macos-arm64.zip` and double-click it to unzip.
-2. Drag **Inktion** into your **Applications** folder.
-3. Open Inktion. macOS will say it can't verify the developer. Click **Done** (or **Cancel**).
+1. Download `Inktion-…-macos-arm64.dmg` and double-click it.
+2. In the window that opens, drag **Inktion** onto the **Applications** folder. Then eject the
+   Inktion disk (the ⏏ button next to it in Finder's sidebar).
+3. Open Inktion from Applications or Launchpad. macOS will say it can't verify the developer. Click **Done** (or **Cancel**).
 4. Open **System Settings › Privacy & Security**. Scroll down to the message about
    Inktion and click **Open Anyway**, then confirm with your password or Touch ID.
 5. Inktion opens. You only need to do this once; after that it opens normally, including after
@@ -177,14 +178,26 @@ xattr -dr com.apple.quarantine /Applications/Inktion.app
 
 ## Installing on Windows (64-bit)
 
-1. Download `Inktion-…-windows-x64.zip`. If your browser says the file "isn't commonly
+1. Download `Inktion-…-windows-x64-setup.exe`. If your browser says the file "isn't commonly
    downloaded", choose **Keep** (in Edge: **⋯ › Keep › Show more › Keep anyway**).
-2. Right-click the zip, choose **Extract All…**, and pick a folder to keep Inktion in (for
-   example `Documents\Inktion`).
-3. Double-click **Inktion.exe**. If a blue **"Windows protected your PC"** box appears, click
-   **More info**, then **Run anyway**.
-4. If your antivirus quarantines the file, you can restore it and add an exception for the
-   Inktion folder. You can also check the file first, as described above.
+2. Run it. If a blue **"Windows protected your PC"** box appears, click **More info**, then
+   **Run anyway**.
+3. Follow the installer. It installs just for you, so it doesn't ask for an administrator
+   password. It adds Inktion to the Start menu (with an optional desktop shortcut) and makes
+   `.inkt` projects open in Inktion when you double-click them.
+4. If your antivirus quarantines the file, you can restore it and add an exception for
+   Inktion. You can also check the file first, as described above.
+
+To remove Inktion, use **Settings › Apps › Installed apps › Inktion › Uninstall**. Your
+projects aren't touched.
+
+<details>
+<summary>Prefer no installer?</summary>
+
+Download `Inktion-…-windows-x64.zip` instead. Right-click it, choose **Extract All…**, and run
+**Inktion.exe** from the extracted folder. Keep `ffmpeg.exe` next to it: that's what exports
+video.
+</details>
 
 ---
 
