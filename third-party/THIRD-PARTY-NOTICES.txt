@@ -1,0 +1,17 @@
+Inktion includes a copy of FFmpeg, used as a separate program for video export and import.
+
+FFmpeg 7.1.1 (https://ffmpeg.org), built with:
+  - x264 (stable branch, commit b35605ace3ddf7c1a5d67a2eb553f034aef41d55), GPL v2 or later
+  - libvpx v1.15.2, BSD 3-Clause
+  - Opus 1.5.2, BSD 3-Clause
+
+Because it includes x264, this FFmpeg build is licensed under the GNU General Public License,
+version 3 (see FFMPEG-LICENSE.txt). It is built, unmodified, from these sources:
+  https://ffmpeg.org/releases/ffmpeg-7.1.1.tar.gz
+  https://code.videolan.org/videolan/x264/-/archive/b35605ace3ddf7c1a5d67a2eb553f034aef41d55/x264.tar.gz
+  https://github.com/webmproject/libvpx/archive/refs/tags/v1.15.2.tar.gz
+  https://downloads.xiph.org/releases/opus/opus-1.5.2.tar.gz
+The complete build script is published at
+  https://github.com/HotcakeHooligan/inktion-releases/blob/main/third-party/build-ffmpeg.sh
+You can also request the source by opening an issue at
+  https://github.com/HotcakeHooligan/inktion-releases/issues

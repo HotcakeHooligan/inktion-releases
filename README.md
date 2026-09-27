@@ -1,13 +1,117 @@
+<div align="center">
+
+<img src="assets/icon.png" width="160" alt="Inktion icon">
+
 # Inktion
 
-A 2D animation app for drawing, rigging and animating, for macOS and Windows.
+**Draw it. Rig it. Make it move.**<br>
+A 2D animation studio for frame-by-frame drawing, vector art, rigging and motion, for macOS and Windows.
 
-**[Download the latest release →](https://github.com/HotcakeHooligan/inktion-releases/releases)**
+[![Latest release](https://img.shields.io/github/v/release/HotcakeHooligan/inktion-releases?include_prereleases&label=latest&color=8b5cf6)](https://github.com/HotcakeHooligan/inktion-releases/releases)
+![macOS](https://img.shields.io/badge/macOS-Apple%20silicon-111?logo=apple&logoColor=white)
+![Windows](https://img.shields.io/badge/Windows-10%20%2F%2011-0078D4?logo=windows&logoColor=white)
+![Status](https://img.shields.io/badge/status-beta-f59e0b)
+
+### [⬇&nbsp; Download Inktion](https://github.com/HotcakeHooligan/inktion-releases/releases/latest)
+
+<sub>No account · No tracking · Updates itself</sub>
+
+</div>
 
 > [!WARNING]
 > **Inktion is in beta.** It's still young and you may run into bugs. Save often and keep
 > backups of work you care about. Please [report problems](https://github.com/HotcakeHooligan/inktion-releases/issues)
 > so they can be fixed.
+>
+> The app isn't code-signed yet, so your computer will warn you the first time you open it.
+> [Here's why, and how to open it safely.](#why-your-computer-warns-about-inktion)
+
+---
+
+## What you can do with Inktion
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### ✏️ Draw
+
+- **Vector and raster layers** side by side: clean, editable lines or painterly pixels
+- **Custom brushes**: ink pen, pencil, charcoal, chalk, airbrush, marker, calligraphy and
+  your own, with paper grain, jitter and tapering
+- **Made for the mouse**: simulated pressure and a rope stabilizer give smooth, confident lines
+- **Shapes, pen, node and width tools**, gradients, and fills that close small gaps
+- **Perspective grids, straight edges and guides** your lines snap to
+
+</td>
+<td width="50%" valign="top">
+
+### 🎞️ Animate
+
+- **Frame-by-frame** with onion skin, a light table and drawing swapping
+- **Motion and shape tweens** with easing curves and motion paths
+- **Graph editor** for fine-tuning every animated property
+- **Timeline power tools**: animate on 2s and 3s, loops, copying keys, exposure dragging,
+  color labels, solo
+- **Own timing per layer**: loop, ping-pong or hold placed animations
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🦴 Rig
+
+- **Bones** with forward and inverse kinematics, angle limits and bendy limbs
+- **Automatic follow-through**: hair, tails and cloth swing with floppiness and bounce
+- **Mesh warp** that tweens between shapes
+- **Pin art to bones**, masks and clipping layers
+- **Reusable assets**: drag rigs, images and animations into any scene
+
+</td>
+<td width="50%" valign="top">
+
+### 🎥 Direct
+
+- **Scene camera** with pan, zoom, rotation and dolly moves
+- **Multiplane depth** with automatic parallax
+- **Scenes** that play back to back, and scene clips that nest one scene in another
+- **Layer effects**: drop shadow, glow, bevel, line boil and 13 blend modes
+- **Adjustment layers**: blur, hue and saturation, color tint and more
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🔊 Sound
+
+- **Import audio** (WAV, MP3, M4A, FLAC, OGG and more) and scrub it in sync
+- **Waveforms on the timeline** for timing to the beat
+- **Auto lip-sync** picks mouth drawings from the dialogue
+
+</td>
+<td width="50%" valign="top">
+
+### 📤 Export
+
+- **Video**: MP4, ProRes MOV and WebM, with your soundtrack
+  (MOV and WebM keep transparency)
+- **GIF, PNG sequence, PNG image and sprite sheets** for games and the web
+- **SVG and Lottie** for scalable, web-ready vector animation
+- **Import video** as a reference layer for rotoscoping
+
+</td>
+</tr>
+</table>
+
+### And the details
+
+- 🌗 **Adjustable interface brightness**, from deep dark to light, with text that stays readable
+- ⌨️ **Your shortcuts**: presets for Animate, Toon Boom Harmony, Moho and Photoshop, or record your own
+- 🧩 **Templates** for video, social, games and animation, plus your own
+- 💾 **Autosave and crash recovery**, and compact project files
+- 🔄 **Automatic updates**: new versions install from inside the app
 
 ---
 
@@ -91,14 +195,11 @@ Inktion checks for new versions when it opens, and you can check any time from
 open while it downloads, and the new version starts the next time you open Inktion (or right
 away with **Restart Now**).
 
-## Video export
+## Third-party software
 
-Exporting video (MP4, MOV, WebM) needs [ffmpeg](https://ffmpeg.org/download.html):
-
-- **macOS**: `brew install ffmpeg` (with [Homebrew](https://brew.sh))
-- **Windows**: `winget install ffmpeg`, or unzip a build so that `ffmpeg.exe` is at `C:\ffmpeg\bin\ffmpeg.exe`
-
-Image, GIF, sprite-sheet, SVG and Lottie export work without it.
+Inktion includes [FFmpeg](https://ffmpeg.org) for video export and import. It's built with
+x264, libvpx and Opus, and licensed under the GPL. The exact sources and the build script are
+listed in [`third-party/`](third-party/). `THIRD-PARTY-NOTICES.txt` ships with the app.
 
 ---
 
