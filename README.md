@@ -76,7 +76,7 @@ A 2D animation studio for frame-by-frame drawing, vector art, rigging and motion
 - **Scene camera** with pan, zoom, rotation and dolly moves
 - **Multiplane depth** with automatic parallax
 - **Scenes** that play back to back, and scene clips that nest one scene in another
-- **Layer effects**: drop shadow, glow, bevel, line boil and 13 blend modes
+- **Layer effects**: drop shadow, glow, bevel, line boil and blend modes
 - **Adjustment layers**: blur, hue and saturation, color tint and more
 
 </td>
@@ -86,7 +86,7 @@ A 2D animation studio for frame-by-frame drawing, vector art, rigging and motion
 
 ### 🔊 Sound
 
-- **Import audio** (WAV, MP3, M4A, FLAC, OGG and more) and scrub it in sync
+- **Import audio** (WAV, MP3, M4A, FLAC, OGG and more)
 - **Waveforms on the timeline** for timing to the beat
 - **Auto lip-sync** picks mouth drawings from the dialogue
 
@@ -107,9 +107,9 @@ A 2D animation studio for frame-by-frame drawing, vector art, rigging and motion
 
 ### And the details
 
-- 🌗 **Adjustable interface brightness**, from deep dark to light, with text that stays readable
-- ⌨️ **Your shortcuts**: presets for Animate, Toon Boom Harmony, Moho and Photoshop, or record your own
-- 🧩 **Templates** for video, social, games and animation, plus your own
+- 🌗 **Adjustable interface brightness**, from deep dark to light
+- ⌨️ **Your shortcuts**: presets for Animate, Toon Boom Harmony, Moho and Photoshop, or set your own
+- 🧩 **Templates** for video, social, games animation, and more
 - 💾 **Autosave and crash recovery**, and compact project files
 - 🔄 **Automatic updates**: new versions install from inside the app
 
