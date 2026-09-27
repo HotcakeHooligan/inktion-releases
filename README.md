@@ -109,7 +109,7 @@ A 2D animation studio for frame-by-frame drawing, vector art, rigging and motion
 
 - 🌗 **Adjustable interface brightness**, from deep dark to light
 - ⌨️ **Your shortcuts**: presets for Animate, Toon Boom Harmony, Moho and Photoshop, or set your own
-- 🧩 **Templates** for video, social, games animation, and more
+- 🧩 **Templates** for video, social, games, animation, and more
 - 💾 **Autosave and crash recovery**, and compact project files
 - 🔄 **Automatic updates**: new versions install from inside the app
 
